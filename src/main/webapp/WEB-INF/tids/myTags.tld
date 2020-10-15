@@ -1,0 +1,41 @@
+<taglib version="2.0" xmlns="http://java.sun.com/xml/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	
+	
+	<tlib-version>1.0</tlib-version>
+	<short-name>TagLibraryName</short-name>
+	<uri>http://nilpointer.net/</uri>
+	
+	<tag>
+		<name>CategoryList</name>
+		<tag-class>com.demo.tags.CategoryTags</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>SliderCategoryList</name>
+		<tag-class>com.demo.tags.sliderTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>CategoryListBottom</name>
+		<tag-class>com.demo.tags.CategoryBottomTags</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>seachTag</name>
+		<tag-class>com.demo.tags.SearchTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>cartTag</name>
+		<tag-class>com.demo.tags.CartTags</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	
+</taglib>

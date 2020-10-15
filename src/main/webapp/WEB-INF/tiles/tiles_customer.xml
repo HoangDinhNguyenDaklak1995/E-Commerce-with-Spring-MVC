@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+     <definition name="customer.register" extends="template_product">   
+        <put-attribute name="content"   value="/WEB-INF/views/customer/register.jsp" /> 
+        <put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+    </definition>
+    
+       <definition name="customer.login.index" extends="template_product">   
+        <put-attribute name="content"  value="/WEB-INF/views/customer/login/index.jsp" />  
+         <put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+    </definition> 
+    
+     <definition name="customer.login.accessDenied" extends="template_product">   
+        <put-attribute name="content"  value="/WEB-INF/views/customer/login/accessDenied.jsp" />  
+         <put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" />
+    </definition>
+    
+     <definition name="customer.account.profile" extends="template_product">   
+        <put-attribute name="content"  value="/WEB-INF/views/customer/login/profile.jsp" /> 
+         <put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+    </definition>
+    
+    <definition name="customer.login.dashboard" extends="template_product">   
+        <put-attribute name="content"  value="/WEB-INF/views/customer/login/dashboard.jsp" />  
+         <put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" />
+    </definition>
+</tiles-definitions>

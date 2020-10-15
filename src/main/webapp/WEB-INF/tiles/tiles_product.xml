@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="template_product" template="/WEB-INF/views/template/template_product.jsp">
+		<put-attribute name="content" value="" />
+	</definition>
+	<definition name="product.details" extends="template_product">
+		<put-attribute name="content"	value="/WEB-INF/views/product/details.jsp" />
+		<put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+	</definition>
+	
+	<definition name="product.category" extends="template_product">
+		<put-attribute name="content"	value="/WEB-INF/views/product/category.jsp" />
+		<put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+	</definition>
+	
+	<definition name="product.category_list" extends="template_product">
+		<put-attribute name="content"	value="/WEB-INF/views/product/category_list.jsp" />
+		<put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+	</definition>
+	
+	<definition name="product.search" extends="template_product">
+		<put-attribute name="content"	value="/WEB-INF/views/product/search.jsp" />
+		<put-attribute name="footer"   value="/WEB-INF/views/home/footer.jsp" /> 
+        <put-attribute name="confort"   value="/WEB-INF/views/home/confort.jsp" /> 
+	</definition>
+</tiles-definitions>

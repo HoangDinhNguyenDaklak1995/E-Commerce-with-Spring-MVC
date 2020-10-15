@@ -1,0 +1,80 @@
+/*
+ * notify-bootstrap 
+ * v1.0.0
+ * https://github.com/the-muda-organization/notify-bootstrap
+ * MIT License
+ */
+.toast-container {
+	width: 400px;
+	max-width: 400px;
+	max-height: 300px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1055;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	padding: 1rem;
+}
+
+.toast {
+	width: 100%;
+	max-width: 400px;
+	pointer-events: auto;
+	position: absolute;
+	right: 25px;
+	height: 50px;
+}
+
+.toast[data-type] {
+	position: relative;
+	border: 0;
+	color: #f8f9fa;
+	background: linear-gradient(to bottom right, #4A4A4A, #2B2B2B);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .5)
+}
+
+.toast[data-type] .toast-content {
+	display: flex;
+	align-items: center;
+	padding-left: 1rem
+}
+
+.toast[data-type] .toast-icon svg {
+	width: 35px;
+	height: 35px;
+	display: block
+}
+
+.toast[data-type] .toast-body {
+	width: 100%;
+	padding-left: 1rem;
+	text-align: justify
+}
+
+.toast[data-type] .close {
+	display: none;
+}
+
+.toast[data-type="info"] {
+	background: linear-gradient(to bottom right, #007bff, #1d93d2)
+}
+
+.toast[data-type="warning"] {
+	background: linear-gradient(to bottom right, #FF9500, #FC0);
+	color: #343a40 !important
+}
+
+.toast[data-type="error"] {
+	background: linear-gradient(to bottom right, #FF2A68, #FF5E3A)
+}
+
+.toast[data-type="success"] {
+	background: linear-gradient(to bottom right, #28a745, #84b42d)
+}
+
+.toast[data-type="other"] {
+	background: linear-gradient(to bottom right, #4A4A4A, #2B2B2B)
+}
