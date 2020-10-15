@@ -80,7 +80,8 @@ public class LoginsController {
 		}
 	}
 	@RequestMapping(value = "dashboard",method =  RequestMethod.GET)
-	public String dashboard(ModelMap map) {
+	public String dashboard(Authentication authentication,ModelMap map) {
+		map.put("customer", accountService.findByUsername(authentication.getName()));
 		return "customer.login.dashboard";
 	}
 	
