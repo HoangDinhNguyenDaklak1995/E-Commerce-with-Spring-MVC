@@ -38,12 +38,16 @@ public class AccountServiceImpl implements AccountService{
 
 	@Override
 	public Account findById(int id) {
-		// TODO Auto-generated method stub
 		return accountrepository.findById(id).get();
 	}
 
 	@Override
 	public Account save(Account account) {
 		return accountrepository.save(account);
+	}
+
+	@Override
+	public List<Account> findAllCustomer() {
+		return accountrepository.findAllCustomer(2);
 	}
 }

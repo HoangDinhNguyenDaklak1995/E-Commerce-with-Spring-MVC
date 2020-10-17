@@ -1,5 +1,7 @@
 package com.demo.services;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +20,20 @@ public class InvoiceServiceImpl implements InvoiceService{
 	@Override
 	public Invoice Save(Invoice invoice) {
 		return invoiceRepository.save(invoice);
+	}
+
+	@Override
+	public List<Invoice> findAllwithOrder(String username) {
+		return invoiceRepository.findAllwithOrder(username);
+	}
+
+	@Override
+	public Invoice findByid(int id) {
+		return invoiceRepository.findById(id).get();
+	}
+
+	@Override
+	public List<Invoice> findAllInvoiceswithOrder() {
+		return invoiceRepository.findAllInvoiceswithOrder();
 	}
 }

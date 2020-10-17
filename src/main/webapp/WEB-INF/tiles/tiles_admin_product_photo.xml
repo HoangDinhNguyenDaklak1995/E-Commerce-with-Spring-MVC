@@ -5,15 +5,16 @@
 <tiles-definitions>
 
     <definition name="admin.photo.photos_of_product" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/photo/photos_of_product.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/photo/photos_of_product.jsp" />             
     </definition>
     
     <definition name="admin.photo.add" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/photo/add.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/photo/add.jsp" />           
     </definition>
     
      <definition name="admin.photo.edit" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/photo/edit.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/photo/edit.jsp" />
+            
     </definition>
     
 </tiles-definitions>

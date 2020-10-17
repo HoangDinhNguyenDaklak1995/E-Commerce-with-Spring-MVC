@@ -8,7 +8,7 @@
         <h2>Customer Panel</h2>
       </div>
       <div class="row">
-        <section class="col-main col-sm-12">
+        <section class="col-main col-sm-9">
   <ol class="one-page-checkout" id="checkoutSteps">
             <li id="opc-billing" class="section allow active">
               <div id="checkout-step-billing" class="step a-item" style="">
@@ -18,10 +18,12 @@
                           <ul>
                             <li>
                               <div class="customer-name">
+                               	<s:input path="id" cssClass="input-text required-entry" type="hidden" required="required"/>
+                               		<s:input path="role" cssClass="input-text required-entry" type="hidden" required="required"/>
                                 <div class="input-box name-firstname">
                                   <label for="billing:firstname"> User Name<span class="required">*</span></label>
                                   <br />
-                                  <s:input path="username" cssClass="input-text required-entry" required="required"/>
+                                  <s:input path="username" cssClass="input-text required-entry" readonly="true" />
                                 </div>
                                 <div class="input-box name-lastname">
                                   <label for="billing:lastname"> Full Name<span class="required">*</span> </label>
@@ -56,12 +58,25 @@
                             </li>
                           </ul>
                     	<button type="submit" class="button continue"><span>Update</span></button>
+                    	<s:hidden path="id"/>
                     </s:form>
                   </fieldset>
               </div>
             </li>
           </ol>
         </section>
+          <aside class="col-left sidebar col-sm-3 col-xs-12">
+          <div class="block block-account">
+            <div class="block-title">My Account</div>
+            <div class="block-content">
+              <ul>
+                <li><a href="${pageContext.request.contextPath}/">Home</a></li>
+                <li class="current"><a href="${pageContext.request.contextPath}/customer-panel/dashboard">Customer Panel</a></li>
+                <li><a href="${pageContext.request.contextPath}/customer-panel/history">History</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </div>

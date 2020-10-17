@@ -5,10 +5,10 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="card">
+		 		<div class="card">
 					<div class="card-header card-header-primary">
-						<h4 class="card-title ">Category Table</h4>
-						<a href="${pageContext.request.contextPath}/admin/category/add"><p class="card-category"> Add Category</p></a>
+						<h4 class="card-title ">Slider Table</h4>
+						<a href="${pageContext.request.contextPath}/admin/slider/add"><p class="card-category"> Add Slider</p></a>
 					</div>
 					<c:if test="${error != null }">
 						<div class="alert alert-success slert" >
@@ -23,21 +23,19 @@
 										<th>ID</th>
 										<th>Name</th>
 										<th>Status</th>
+										<th>Description</th>
 										<th>Action</th>
 									</tr>
 								</thead>
 								<tbody>
-									<c:forEach var="c" items="${categories }">
+									<c:forEach var="c" items="${slide }">
 										<tr>
 											<td>${c.id }</td>
-											<td>${c.name }</td> 
-											<td>${c.status ? 'show' : 'hide' }</td>
+											<td>${c.name }</td>
+											<td>${c.status ? "Active" : "InActive" }</td>
+											<td>${c.description }</td>
 											<td>
-												<a href="${pageContext.request.contextPath}/admin/category/edit/${c.id}">Edit</a> |
-											 	<a href="${pageContext.request.contextPath}/admin/category/delete/${c.id}" id="slert"
-												onclick="return confirm('are you sure?')">Delete</a>|
-												<a href="${pageContext.request.contextPath}/admin/category/subcategories/${c.id}">Sub Category</a> 
-												|<a href="${pageContext.request.contextPath}/admin/category/addsubcategories/${c.id}">Add subCategory</a> 
+												<a href="${pageContext.request.contextPath}/admin/slider/add/${c.username}">Update</a>
 											</td>
 										</tr>
 									</c:forEach>
@@ -45,13 +43,12 @@
 							</table>
 						</div>
 					</div>
-				</div>
+				</div> 
 			</div>
 		</div>
 	</div>
 </div>
 <script type="text/javascript">
-
 function validateForm() {
 	var x = document.forms["form-profile"].value;
 		if (x == "") {
@@ -60,6 +57,4 @@ function validateForm() {
 			notify('success', 'Success Message', 'Save success.');
 		}
 };
-	
-	
 </script>

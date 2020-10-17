@@ -5,26 +5,26 @@
 <tiles-definitions>
 
     <definition name="admin.category.index" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/category/index.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/category/index.jsp" />           
     </definition> 
     
     <definition name="admin.category.add" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/category/add.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/category/add.jsp" />           
     </definition> 
     
      <definition name="admin.category.edit" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/category/edit.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/category/edit.jsp" />           
     </definition> 
     
       <definition name="admin.category.subcategories" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/category/subcategories.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/category/subcategories.jsp" />             
     </definition> 
     
     <definition name="admin.category.addsubcategories" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/category/addsubcategories.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/category/addsubcategories.jsp" />            
     </definition> 
     
      <definition name="admin.category.editsubcategories" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/category/editsubcategories.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/category/editsubcategories.jsp" />        
     </definition> 
 </tiles-definitions>

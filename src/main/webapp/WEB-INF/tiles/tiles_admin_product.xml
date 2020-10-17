@@ -5,11 +5,11 @@
 <tiles-definitions>
 
     <definition name="admin.product.index" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/product/index.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/product/index.jsp" />            
     </definition>
     
      <definition name="admin.product.add" extends="template_admin">  
-        <put-attribute name="content"  value="/WEB-INF/views/admin/product/add.jsp" />    
+        <put-attribute name="content"  value="/WEB-INF/views/admin/product/add.jsp" />            
     </definition>
     
     <definition name="admin.product.edit" extends="template_admin">  
