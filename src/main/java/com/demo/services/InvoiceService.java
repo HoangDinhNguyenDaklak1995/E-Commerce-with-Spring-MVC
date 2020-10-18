@@ -13,4 +13,6 @@ public interface InvoiceService {
 	public Invoice findByid (int id);
 	
 	public List<Invoice> findAllInvoiceswithOrder();
+	
+	public Long countNewInvoices(String status);
 }

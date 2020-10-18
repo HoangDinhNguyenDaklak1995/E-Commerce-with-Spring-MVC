@@ -20,8 +20,7 @@
 							<table class="table">
 								<thead class=" text-primary">
 									<tr>
-										<th>ID</th>
-										<th>Name</th>
+										<th>Photo</th>
 										<th>Status</th>
 										<th>Description</th>
 										<th>Action</th>
@@ -30,12 +29,15 @@
 								<tbody>
 									<c:forEach var="c" items="${slide }">
 										<tr>
-											<td>${c.id }</td>
-											<td>${c.name }</td>
+											<td>
+												<img src="${pageContext.request.contextPath}/uploads/images/${c.name }" width="70" height="70">
+											</td>
 											<td>${c.status ? "Active" : "InActive" }</td>
 											<td>${c.description }</td>
 											<td>
-												<a href="${pageContext.request.contextPath}/admin/slider/add/${c.username}">Update</a>
+												<a href="${pageContext.request.contextPath}/admin/slider/edit/${c.id}">Update</a>|
+												<a href="${pageContext.request.contextPath}/admin/slider/delete/${c.id}" id="slert"
+												onclick="return confirm('are you sure?')">Delete</a>
 											</td>
 										</tr>
 									</c:forEach>

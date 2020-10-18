@@ -23,4 +23,6 @@ public interface ProductService {
 	public List<Product> searchAll(boolean status, String keyword);
 	
 	public List<Product> searchbyCategories(boolean status, String keyword , int categoryId);
+	
+	public long count();
 }

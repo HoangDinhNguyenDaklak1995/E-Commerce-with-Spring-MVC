@@ -36,4 +36,9 @@ public class InvoiceServiceImpl implements InvoiceService{
 	public List<Invoice> findAllInvoiceswithOrder() {
 		return invoiceRepository.findAllInvoiceswithOrder();
 	}
+
+	@Override
+	public Long countNewInvoices(String status) {
+		return invoiceRepository.countNewInvoices(status);
+	}
 }

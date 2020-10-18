@@ -17,4 +17,7 @@ public interface InvoiceRepository extends CrudRepository<Invoice, Integer> {
 	
 	@Query("from Invoice  order by id asc")
 	public List<Invoice> findAllInvoiceswithOrder();
+	
+	@Query("select count(id) from Invoice where status = :status")
+	public Long countNewInvoices(@Param("status") String status);
 }

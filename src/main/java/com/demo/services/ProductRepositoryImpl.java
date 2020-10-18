@@ -61,4 +61,9 @@ public class ProductRepositoryImpl implements ProductService {
 	public List<Product> searchbyCategories(boolean status, String keyword, int categoryId) {
 		return productRepository.searchbyCategories(status, keyword, categoryId);
 	}
+
+	@Override
+	public long count() {
+		return productRepository.count();
+	}
 }
